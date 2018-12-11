@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Markdown Test"
+title:  "한글도 입력되나?"
 date:   2018-12-11 13:23:00 +0900
 categories: jekyll update
 ---
-Does this works?
+Does this work?
 
 {% highlight ruby %}
 def print_hi(name)

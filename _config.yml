@@ -103,11 +103,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Joowhan Song"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Master Student\nSeoul Nat'l Univ."
+  location         : "Seoul, South Korea"
+  email            : "joovvhan.sonq@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

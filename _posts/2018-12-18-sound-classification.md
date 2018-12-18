@@ -54,6 +54,31 @@ DCASE: [**DCASE 2018**](http://dcase.community/challenge2018/index)
 
 ## 현황
 
+다양한 방법론이 존재하지만, 결국 Sound Classification은 소리를 시주파수 데이터(예: MFCC(Mel-frequency Cepstrum Coefficient))로 변환하여, 
+CNN 모델에 적용하는 것이 일반적이다. 개인적인 경험상 이 부분에 대해서는 큰 변화가 없다. 물론 더 많은 논문을 조사할 필요가 있다. 
+어쨌든, 참조할 모델에는 큰 차이가 없다는 전제하에 우선적으로 Dataset을 조사하기로 했다.
+
+현재 UrbanSound8K 데이터와 ESC-50 데이터를 확보했다.
+
+```
+전체 주파수 범위가 224 등분 되도록 Spectrogram의 nsc를 448로 설정
+Spectrogram의 시간 축 방향에서, 중심의 224 픽셀을 선택하여 224x224 이미지 생성
+Keras의 Pretrained Xception 모델에 적용
+-> 전혀 분류 못하고 있음
+```
+
+```
+지나치게 느린 연산 -> GPU 가속기를 켜지 않았었음... 해결됨
+클래스와 일치하지 않는 부분이 있음(예: 새 소리로 분류된 음성 중 새 소리가 나지 않는 부분이 있음)
+전혀 분류 못하고 있음 -> 원인 불명
+```
+
+## 조치해야 할 부분
+
+1. Karol J. Piczak의 논문을 참조하여 같은 방식으로 분류 시도.
+
+
+
 
 
 

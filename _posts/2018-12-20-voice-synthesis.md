@@ -24,7 +24,7 @@ title: "Voice Synthesis"
 * [**Ryuichi Yamamoto**](https://github.com/r9y9)
 
 ## 해야할 일
-* 관련 논문을 싹 다 읽고 *용어*와 *관련 기술* 정리
+* 관련 논문을 싹 다 읽고 **용어**와 **관련 기술** 정리
 * 작동하는 코드의 흐름을 line-by-line으로 분석
 
 ## 해결해야 할 점

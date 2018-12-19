@@ -12,11 +12,10 @@ title: "Music Style Transfer"
 
 본인이 8-bit 스타일의 음악을 좋아하고, K-pop이 지속적으로 인기를 끌면서 다음과 같은 데이터를 접할 수 있게 되었다.
 
-<iframe width="427" height="240" src="https://www.youtube.com/embed/Fm5iP0S1z9w" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-
-
-<iframe width="427" height="240" src="https://www.youtube.com/embed/YkLaNh1F_w8" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="427" height="240" src="https://www.youtube.com/embed/Fm5iP0S1z9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+-----
+<iframe width="427" height="240" src="https://www.youtube.com/embed/YkLaNh1F_w8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-----
 
 원곡과 8-bit 스타일의 편곡된 음악이 쌍으로 존재한다면, 마치 [**vid2vid**](https://github.com/NVIDIA/vid2vid)처럼 
 Music Style Transfer가 가능할 것이라는 것이 본인의 추측이다.

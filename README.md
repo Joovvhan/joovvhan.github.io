@@ -1,7 +1,7 @@
 # Joovvhan's Personal Blog
 This is my personal [**blog**](https://joovvhan.github.io/).
 
-I am planning to add information on my current on going progresses. 
+I am planning to add information on my current on-going progresses. 
 
 #### My current research topics
 * Data Visualization

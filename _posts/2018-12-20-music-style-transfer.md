@@ -22,6 +22,9 @@ Music Style Transfer가 가능할 것이라는 것이 본인의 추측이다.
 
 단, 이를 구현하기 위해서는 기존 소리 영역에서의 딥러닝 방법론을 먼저 숙지하는 것이 우선일 것이다.
 
+## 참고 문헌 
+* [**TimbreTron**](https://www.cs.toronto.edu/~huang/TimbreTron/index.html)
+
 ## 진행 상황
 * 악보를 생각해보자. 특정 악기의 음색으로 주어진 악보대로 연주를 합성해내는 것은 이미 오래 전부터 가능하다.
 * 원곡 &rarr; 악보 &rarr; 8-bit 편곡: 쉽지만, End-to-end Approach라고 보기에는 무리가 있다.

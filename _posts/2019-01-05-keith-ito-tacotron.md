@@ -20,10 +20,12 @@ title: "Keith Ito's Tacotron Review"
 ### util/audio.py
 librosa 패키지의 wrapper라고 볼 수 있음.
 > _preemphasis: 초기 필터, a, b parameter를 직접 집어 넣어서 정확히 몇 Hz에 해당하는 필터인지 분석 필요
+
 * _stft: librosa.stft를 수행할 뿐 
 * _istft: librosa.istft를 수행할 뿐
 * spectrogram: 필터링 수행 후 STFT 적용, abs 적용하고(이 시점에서 데이터가 복소수가 아니게 된다), ref_level_db=20 빼주고, db로 변환
-> melspectrogram: spectrogram 함수에서 log 취하기 이전에 mel-frequency 가중치를 생성하고 곱하는 것으로 파악. librosa.filters.mel 함수 분석 필요. 
+> melspectrogram: spectrogram 함수에서 log 취하기 이전에 mel-frequency 가중치를 생성하고 곱하는 것으로 파악. librosa.filters.mel 함수 분석 필요.
+
 * _amp_to_db: 주어진 array에 20 * log10 수행. -inf를 방지하지 위해 최소값은 1e-5로 대체.
 * _db_to_amp: (1/20 * x) ^ 10, _amp_to_db의 정확한 역변환.
 * _normalize: S에 min_level_db 빼고, min_level_db로 나누고, np.clip을 이용하여 0과 1 사이 값으로 자르기. spectrogram, melspectrogram 양쪽에 활용.

@@ -5,7 +5,6 @@ title: "Keith Ito's Tacotron Review"
 ### 이 포스트에서는 Keith Ito라는 분이 구현한 Tacotron 코드를 분석한다.
 코드의 흐름을 처음부터 끝까지 분석하여 이를 구현하기 위해 공부해야 할 부분을 정리하려고 한다.
 
-```
 hParam.py 
 각종 하이퍼 파라미터를 기록, 전체 흐름을 이해하는데 도움이 됨.
 
@@ -36,7 +35,3 @@ train.py
 tacotron.py
 Tacotron class를 포함하고 있는 실제 tacotron 모델을 생성하는 코드, 어려움
 
-
-
-
-```

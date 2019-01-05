@@ -2,9 +2,10 @@
 title: "Voice Analysis: What Component Defines a Voice?"
 ---
 
-## 이 포스트에서는 음성이란 무엇인지에 대하여 고찰한다. [코드](https://github.com/Joovvhan/voice-analysis)
+## 이 포스트에서는 음성이란 무엇인지에 대하여 고찰한다.
+[코드](https://github.com/Joovvhan/voice-analysis)
 
-석사 연구 과정 동안 
+석사 연구 과정 동안 여러 기계에서 발생한 진동 신호를 분석해보았다. 이 포스트에는 진동 및 음성에 대하여 확인한 다양한 사항들을 업데이트할 예정이다.
 
 ### Harmonic과 파형
 
@@ -14,6 +15,8 @@ Harmonic이란, 간단하게 말하면 배수 진동이라고 할 수 있다. �
 이 부분에 대해서 오랜 시간 의문을 가져왔지만 답을 얻지 못했었는데, 이번 Harmonic 현상을 관찰해보았다.
 
 {% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/raw_wav.png" alt="">{% endraw %}
+
+![My helpful screenshot]({{ "/assets/images/raw_wav.png" | absolute_url }})
 
 
 ### 음성 데이터와 변위

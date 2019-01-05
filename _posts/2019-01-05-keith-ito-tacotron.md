@@ -16,13 +16,13 @@ title: "Keith Ito's Tacotron Review"
 [X] metadata: train.txt를 이용하여 데이터를 관리하는 방식, 이후 DataFeeder로 이어짐.
 
 ### datasets/ljspeech.py
-[ ] lambda: tqbm을 lambda 문법으로 넘겨주는 이유
+[-] lambda: tqbm을 lambda 문법으로 넘겨주는 이유
 
-[ ] ProcessPoolExecutor, partial: 병렬 처리 문법
+[-] ProcessPoolExecutor, partial: 병렬 처리 문법
 
 ### util/audio.py
 librosa 패키지의 wrapper라고 볼 수 있음.
-[ ] _preemphasis: 초기 필터, a, b parameter를 직접 집어 넣어서 정확히 몇 Hz에 해당하는 필터인지 분석 필요
+[-] _preemphasis: 초기 필터, a, b parameter를 직접 집어 넣어서 정확히 몇 Hz에 해당하는 필터인지 분석 필요
 
 [X] _stft: librosa.stft를 수행할 뿐 
 
@@ -30,7 +30,7 @@ librosa 패키지의 wrapper라고 볼 수 있음.
 
 [X] spectrogram: 필터링 수행 후 STFT 적용, abs 적용하고(이 시점에서 데이터가 복소수가 아니게 된다), ref_level_db=20 빼주고, db로 변환
 
-[ ] melspectrogram: spectrogram 함수에서 log 취하기 이전에 mel-frequency 가중치를 생성하고 곱하는 것으로 파악. librosa.filters.mel 함수 분석 필요.
+[-] melspectrogram: spectrogram 함수에서 log 취하기 이전에 mel-frequency 가중치를 생성하고 곱하는 것으로 파악. librosa.filters.mel 함수 분석 필요.
 
 [X] _amp_to_db: 주어진 array에 20 * log10 수행. -inf를 방지하지 위해 최소값은 1e-5로 대체.
 
@@ -38,9 +38,9 @@ librosa 패키지의 wrapper라고 볼 수 있음.
 
 [X] _normalize: S에 min_level_db 빼고, min_level_db로 나누고, np.clip을 이용하여 0과 1 사이 값으로 자르기. spectrogram, melspectrogram 양쪽에 활용.
 
-[ ] _stft_parameters: hparams 클래스에서 STFT 변수를 호출, n_fft와 hparms.num_freq 사이의 관계식 파악 필요.
+[-] _stft_parameters: hparams 클래스에서 STFT 변수를 호출, n_fft와 hparms.num_freq 사이의 관계식 파악 필요.
 
-[ ] _grinffin_lim: spectrogram을 원신호로 복원하는 알고리즘, inverse STFT에 비해 갖는 장점을 아직 파악하지 못함.
+[-] _grinffin_lim: spectrogram을 원신호로 복원하는 알고리즘, inverse STFT에 비해 갖는 장점을 아직 파악하지 못함.
 
 
 ### train.py

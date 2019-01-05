@@ -13,7 +13,7 @@ Harmonic이란, 간단하게 말하면 배수 진동이라고 할 수 있다. �
 정수배 주파수에서도 나타나며, 200Hz 에너지 수치가 Harmonic들에 비해 오히려 작을 수도 있다. 
 이 부분에 대해서 오랜 시간 의문을 가져왔지만 답을 얻지 못했었는데, 이번 Harmonic 현상을 관찰해보았다.
 
-
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/raw_wav.png" alt="">{% endraw %}
 
 
 ### 음성 데이터와 변위

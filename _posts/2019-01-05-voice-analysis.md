@@ -14,7 +14,25 @@ Harmonic이란, 간단하게 말하면 배수 진동이라고 할 수 있다. �
 정수배 주파수에서도 나타나며, 200Hz 에너지 수치가 Harmonic들에 비해 오히려 작을 수도 있다. 
 이 부분에 대해서 오랜 시간 의문을 가져왔지만 답을 얻지 못했었는데, 이번 Harmonic 현상을 관찰해보았다.
 
-({{ "/assets/images/raw_wav.png" | absolute_url }})
+![raw_wav]({{ "/assets/images/raw_wav.png" | absolute_url }})
+
+위 그래프는 연구자 본인의 "아" 발음을 녹음한 것이다.
+
+![closer_look_on_raw_wav]({{ "/assets/images/closer_look_on_raw_wav.png" | absolute_url }})
+
+이 그래프는 위의 그래프를 조금 더 짧은 시간 구간으로 확대하여 나타낸 것이다. 확실치는 않지만 무엇인가가 반복되고 있다는 것은 확인할 수 있다.
+
+![raw_wav_fft]({{ "/assets/images/raw_wav_fft.png" | absolute_url }})
+
+전체 구간에 대하여 FFT를 수행하여 그래프로 나타낸 결과가 위와 같다. 149Hz와 그 Harmonic이 존재하는 것을 확실하게 파악할 수 있다.
+
+149Hz 단위로 음성을 쪼개서, 두 사이클마다 그래프로 나타낸 결과가 다음과 같다.
+
+![raw_wav_by_two_cycle]({{ "/assets/images/raw_wav_by_two_cycle.png" | absolute_url }})
+
+이제 149Hz에 해당하는 반복되는 패턴이 무엇인지 파악할 수 있다.
+
+
 
 ### 음성 데이터와 변위
 
